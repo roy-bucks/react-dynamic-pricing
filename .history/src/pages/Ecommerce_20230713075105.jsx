@@ -12,12 +12,18 @@ const Ecommerce = () => {
   const { currentColor, currentMode } = useStateContext();
 
   return (
-    <div className="mt-24">
-      <div className="flex flex-wrap lg:flex-nowrap p-2 ">
-        <h1>Hello World</h1>
 
+    <div className="mt-2">
+      <div className="flex flex-wrap lg:flex-nowrap justify-center ">
+        <div className="bg-danger">
+          <div className="flex justify-between items-center">
+            <h1>Hello world</h1>
+          </div>
+        </div>
       </div>
     </div>
+
+
   );
 };
 

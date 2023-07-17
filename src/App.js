@@ -5,7 +5,7 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
 import { Navbar, Footer, Sidebar, ThemeSettings } from "./components";
 import {
-  Ecommerce,
+  SkuMng,
 } from "./pages";
 import "./App.css";
 
@@ -48,7 +48,7 @@ const App = () => {
             </TooltipComponent>
           </div>
           {activeMenu ? (
-            <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
+            <div className="w-60 fixed sidebar dark:bg-secondary-dark-bg bg-white ">
               <Sidebar />
             </div>
           ) : (
@@ -59,11 +59,11 @@ const App = () => {
           <div
             className={
               activeMenu
-                ? "dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-72 w-full  "
+                ? "dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-60 w-full  "
                 : "bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 "
             }
           >
-            <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full ">
+            <div className="w-full ">
               <Navbar />
             </div>
             <div>
@@ -71,8 +71,8 @@ const App = () => {
 
               <Routes>
                 {/* dashboard  */}
-                <Route path="/" element={<Ecommerce />} />
-                <Route path="/ecommerce" element={<Ecommerce />} />
+                <Route path="/" element={<SkuMng />} />
+                <Route path="/sku-management" element={<SkuMng />} />
               </Routes>
             </div>
             <Footer />
